@@ -10,14 +10,14 @@ export class Directory extends Component {
     
       this.state = {
         sections: [{
-                title : "Men",
+                title : "Mens",
                 imageUrl: "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
                 size : "large",
                 id : "1",
                 linkUrl: "men"
             },
             {
-                title: "Women",
+                title: "Womens",
                 imageUrl: "https://images.unsplash.com/photo-1509461641751-ed8c60422376?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
                 size: "large",
                 id: 2,
