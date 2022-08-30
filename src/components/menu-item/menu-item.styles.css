@@ -17,6 +17,15 @@
 
 }
 
+.menu-item:hover .content,
+.menu-item:focus .content {
+  transform: scale(1.2);
+}
+
+.content {
+    transition: all .5s;
+}
+
 .large {
     width: calc((100vw - 80px) / 2);
     height: 350px;
