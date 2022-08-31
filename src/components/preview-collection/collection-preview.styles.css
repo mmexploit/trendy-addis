@@ -1,0 +1,18 @@
+.collection-preview {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.preview {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin: 10px;
+}

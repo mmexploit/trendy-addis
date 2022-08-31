@@ -1,0 +1,44 @@
+.collection-item {
+    display: flex;
+    height: 400px;
+    width: 22%;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.image {
+    width: 100%;
+    height: 85%;
+    background-size: cover;
+    background-position: center;
+}
+
+.currency {
+    font-weight: 700;
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.old-price {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+.collection-footer {
+    height: 15%;
+    display: flex;
+    margin: 4px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 380px) {
+    .collection-item {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+}

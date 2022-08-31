@@ -1,4 +1,4 @@
-export const ShopData = [
+const ShopData = [
     {
         id: 1,
         title: "Mens",
@@ -6,9 +6,9 @@ export const ShopData = [
         items: [
             {
                 id: 1,
-                name: "Men chest Bag",
-                imageUrl: "https://img.ltwebstatic.com/images3_pi/2021/10/12/1634003890918f0f2e02a10963da9be8a7ec759a66_thumbnail_405x552.webp",
-                price: 950,
+                name: "Striped Shirt with shorts",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/07/11/16575033410ad327332aa22dfe446290dd38ff2f4d_thumbnail_900x.webp",
+                price: 1100,
             },
             {
                 id: 2,
@@ -18,9 +18,9 @@ export const ShopData = [
             },
             {
                 id: 3,
-                name: "Men Slogan Graphic Tee",
-                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/08/03/165951209984f1ea2df2ecc228912f5d4f4650b429.webp",
-                price: 750,
+                name: "Men Two Tone Bomber",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/08/01/1659340548bb9ece09d9ce627cdd922c79362afc48_thumbnail_900x.webp",
+                price: 1300,
             },
             {
                 id: 4,
@@ -30,28 +30,34 @@ export const ShopData = [
             },
             {
                 id: 5,
-                name: "Men T-Shirt and Shorts",
-                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/03/31/1648722829610f4aca8c2f68d44d1bcfadf5299468_thumbnail_900x.webp",
-                price: 1000,
-            },
-            {
-                id: 6,
                 name: "Drawstring Joggers",
                 imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/06/14/16551879125993ef545f32d8db139ea4fb0130ed7b_thumbnail_900x.webp",
                 price: 950,
             },
             {
+                id: 6,
+                name: "Men chest Bag",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2021/10/12/1634003890918f0f2e02a10963da9be8a7ec759a66_thumbnail_405x552.webp",
+                price: 950,
+            },
+            {
                 id: 7,
-                name: "Striped Shirt with shorts",
-                imageurl: "https://img.ltwebstatic.com/images3_pi/2022/05/25/1653465805a379f1a05002eb6f67b04c18b2137dac_thumbnail_900x.webp",
-                price: 1100,
+                name: "Men T-Shirt and Shorts",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/03/31/1648722829610f4aca8c2f68d44d1bcfadf5299468_thumbnail_900x.webp",
+                price: 1000,
             },
             {
                 id: 8,
+                name: "Men Slogan Graphic Tee",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/08/03/165951209984f1ea2df2ecc228912f5d4f4650b429.webp",
+                price: 750,
+            },
+            {
+                id: 9,
                 name: "Men Sweater and drawstring waistpant",
                 imageUrl: "https://img.ltwebstatic.com/images3_pi/2021/11/26/1637904571ff8919b7373cc94c7373c7cca2e6c215_thumbnail_900x.webp",
                 price: 1200,
-            },
+            }
         ]
     },
     {
@@ -111,7 +117,7 @@ export const ShopData = [
     },
     {
         id: 3,
-        name: "Clothing",
+        title: "Clothing",
         routeName: "clothing",
         items: [
             {
@@ -197,7 +203,7 @@ export const ShopData = [
     },
     {
         id: 4,
-        name: "Bags",
+        title: "Bags",
         routeName: "bags",
         items: [
             {
@@ -264,7 +270,7 @@ export const ShopData = [
     },
     {
         id: 5,
-        name: "Jewellery",
+        title: "Jewellery",
         routeName: "jewellery",
         items: [
             {
@@ -276,7 +282,7 @@ export const ShopData = [
             {
                 id: 2,
                 name: "3pcs Heart Set",
-                imageUrl: "https://sheinsz.ltwebstatic.com/she_dist/images/bg-grey-ba96515e9b.png",
+                imageUrl: "https://img.ltwebstatic.com/images3_pi/2022/08/18/16608002859a8806764171c9cc030f4e51273d3ab4_thumbnail_900x.webp",
                 price: 550,
             },
             {
@@ -325,7 +331,7 @@ export const ShopData = [
     },
     {
         id: 6,
-        name: "Glasses",
+        title: "Glasses",
         routeName: "glasses",
         items: [
             {
@@ -386,7 +392,7 @@ export const ShopData = [
     },
     {
         id: 7,
-        name: "Tech-Accessories",
+        title: "Tech-Accessories",
         routeName: "tech-accessories",
         items: [
             {
@@ -441,3 +447,5 @@ export const ShopData = [
         ]
     }
 ]
+
+export default ShopData;
