@@ -1,0 +1,14 @@
+.custom-button {
+    background-color:aliceblue;
+    padding: 10px;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.custom-button:hover {
+    background-color: black;
+    color: white;
+}

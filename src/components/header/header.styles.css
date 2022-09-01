@@ -1,12 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    padding: 1em 1em 1em 1.4em;
+    padding: 2em 2em 1.1em 1.4em;
     border: 1px solid black;
     align-items: center;
     margin-bottom: 1em;
     background: linear-gradient(89.81deg, rgba(93, 29, 215, 0.375774) 51.89%, rgba(108, 68, 156, 0.546998) 61.07%, rgba(109, 55, 134, 0.7) 99.84%), linear-gradient(89.75deg, #494F81 42.57%, rgba(106, 43, 171, 0.605502) 93.18%, rgba(138, 47, 170, 0) 98.92%);
-
+    height: 6em;
 }
 
 .option {
@@ -15,7 +21,8 @@
     gap: 10em;
     text-decoration: none;
     color: white;
-    margin-right: 2em;
+    margin-right: 1.5em;
+    font-size: 1.2rem;
 }
 
 .body {
