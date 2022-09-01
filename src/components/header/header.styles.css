@@ -18,11 +18,12 @@
 .option {
     display: flex;
     justify-content: space-around;
-    gap: 10em;
+    gap: 4em;
     text-decoration: none;
     color: white;
     margin-right: 1.5em;
     font-size: 1.2rem;
+    cursor: pointer;
 }
 
 .body {

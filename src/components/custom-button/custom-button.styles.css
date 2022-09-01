@@ -12,3 +12,11 @@
     background-color: black;
     color: white;
 }
+
+.google-sign-in {
+    background-color: #4285F4;
+}
+
+.google-sign-in:hover {
+    background-color: blue;
+}
