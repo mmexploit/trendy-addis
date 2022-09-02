@@ -6,8 +6,8 @@
 .sign-in {
     background: linear-gradient(136.46deg, #4A3C81 51.29%, rgba(77, 24, 140, 0.781425) 76.62%);
     width: 30vw;
-    margin: 50px 20px 20px 40px;
-    padding: 30px;
+    /* margin: 50px 20px 20px 60px; */
+    padding: 30px 30px 60px 30px;
     border-radius: 10px;
     box-shadow: 5px 10px 8px black;
     color: white;
