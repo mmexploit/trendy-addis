@@ -50,6 +50,7 @@ export class SignUp extends Component {
 
         this.setState({[name]: value});
     }
+    
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
 
