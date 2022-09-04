@@ -6,6 +6,8 @@
     border-radius: 5px;
     text-transform: uppercase;
     font-weight: 600;
+    display: flex;
+    align-self: center;
 }
 
 .custom-button:hover {
@@ -19,4 +21,15 @@
 
 .google-sign-in:hover {
     background-color: blue;
+}
+
+
+.inverted {
+    background-color: black;
+    color: white;
+}
+
+.inverted:hover {
+    background-color: white;
+    color: black;
 }

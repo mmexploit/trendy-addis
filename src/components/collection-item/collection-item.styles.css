@@ -4,6 +4,7 @@
     width: 22%;
     flex-direction: column;
     border: 1px solid black;
+    position: relative;
 }
 
 .image {
@@ -34,6 +35,25 @@
     margin: 4px;
     justify-content: space-between;
     align-items: center;
+}
+
+#cart-button {
+    position: absolute;
+    top: 270px;
+    padding: 10px 35px;
+    opacity: 0;
+}
+
+.image:hover ~ #cart-button {
+    opacity: 1;
+}
+
+#cart-button:hover {
+    opacity: 1;
+}
+
+.image:hover {
+    opacity: 0.8;
 }
 
 @media (max-width: 380px) {
