@@ -9,7 +9,7 @@ const CollectionPreview = ({title, items}) => (
         <h1 className='title'>{title}</h1>
         <div className='preview'>
             {
-                items.filter(item => item.id < 5 ).map(item => (
+                items.slice(0, 4).map(item => (
                     <CollectionItem key={item.id} item={item}/>
                 ))
             }

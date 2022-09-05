@@ -1,11 +1,13 @@
 .cart-dropdown {
     position: absolute;
-    top: 60px;
+    top: 79px;
     right: 0;
     width: 20vw;
     height: 320px;
     padding: 10px;
-    background-color: white;
+    background-color: rgba(189, 133, 233, 1);
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px black;
 }
 
 .cart-items {
