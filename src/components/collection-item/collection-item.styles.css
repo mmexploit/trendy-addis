@@ -14,8 +14,13 @@
     background-position: center;
 }
 
-.currency {
+.name {
+    font-size: .87rem;
     font-weight: 700;
+}
+
+.currency {
+    font-weight: 1000;
 }
 
 .price-tag {
@@ -23,9 +28,13 @@
     flex-direction: column;
 }
 
+.price {
+    font-weight: 500;
+}
+
 .old-price {
     font-size: 0.7rem;
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: line-through;
 }
 

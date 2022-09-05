@@ -1,0 +1,21 @@
+.checkout-item {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: max-content;
+}
+
+
+.image-container {
+    width: 70%;
+    padding: 5px;
+    grid-column: 1;
+}
+
+
+.name-checkout{
+    grid-column: 2 / 3;
+}
+.item-checkout {
+    width: 100%
+}
+

@@ -21,3 +21,8 @@
     margin-left: 40px;
     border: 1px solid black;
 }
+
+.empty-message {
+    margin: auto auto;
+    color: white;
+}
