@@ -22,3 +22,12 @@
 .header-block:nth-child(5) {
     width: 8%;
 }
+
+.total {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.total-checkout {
+    margin-left: 45vw;
+}
