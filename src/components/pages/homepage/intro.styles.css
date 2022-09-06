@@ -46,3 +46,45 @@
     background-size:contain;
     background-repeat: no-repeat;
 }
+
+
+@media (max-width: 50em) {
+    .intro {
+        height: auto;
+        grid-template-columns: minmax(1em, 10%) 30ch auto;
+        background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
+        max-width: 100%;
+    }
+
+    .intro-title {
+        margin-top: .9em;
+    }
+
+    .intro-desc {
+        margin-top: .5em;
+    }
+
+    .intro-subtitle {
+        margin-top: 5em;
+    }
+
+    .open {
+        grid-column: 2 / 3 ;
+        grid-row: 3;
+        max-width: 100%;
+        filter: blur(1px);
+        margin-top: -6.5em;
+        z-index: 0;
+    }
+
+    #sign-up-button {
+        grid-column: 2 / 3;
+        grid-row: 2;
+        max-width: 30%;
+        justify-self: baseline;
+        margin-top: 13em;
+        z-index: 3;
+        font-size: .875rem;
+        border-bottom: 0;
+    }
+}
