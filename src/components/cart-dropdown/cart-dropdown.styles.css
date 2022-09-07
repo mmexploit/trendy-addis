@@ -26,3 +26,10 @@
     margin: auto auto;
     color: white;
 }
+
+@media(max-width: 400px) {
+    .cart-dropdown {
+        width: 80vw;
+        top: 60px;
+    }
+}

@@ -39,4 +39,10 @@
     width: 30vw;
 }
 
+@media (max-width: 400px) {
+    .form-input {
+        width: 60vw;
+    }
+}
+
 

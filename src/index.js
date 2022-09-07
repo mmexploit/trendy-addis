@@ -17,10 +17,13 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
+
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const primaryNav = document.querySelector(".primary-navigation");
 
 navToggle.addEventListener("click", () => {
-  primaryNav.hasAttribute("data-visibile") ? console.log('true') : console.log("it doesnt")
+  primaryNav.hasAttribute("data-visibile") 
+    ? navToggle.setAttribute("aria-expanded", false) 
+    : navToggle.setAttribute("aria-expanded", true)
   primaryNav.toggleAttribute("data-visibile")
 })

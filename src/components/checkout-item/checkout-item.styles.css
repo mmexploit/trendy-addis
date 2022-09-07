@@ -32,3 +32,10 @@
 .arrow {
     cursor: pointer;
 }
+
+@media(max-width: 400px) {
+    .checkout-item {
+        display: flex;
+        flex-direction: column;
+    }
+}

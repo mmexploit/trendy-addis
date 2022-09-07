@@ -7,3 +7,10 @@
     box-shadow: 10px 8px 8px black;
     /* margin-left: 6em; */
 }
+
+@media(max-width: 400px) {
+    .sign-up {
+        margin-top: 2em;
+        width: 90vw;
+    }
+}

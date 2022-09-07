@@ -31,3 +31,18 @@
 .total-checkout {
     margin-left: 45vw;
 }
+
+@media(max-width: 400px) {
+    .checkout-header {
+        display: none;
+
+    }
+
+    .total {
+        font-size: 1.2rem;
+    }
+
+    .total-checkout {
+        margin-left: 15vw;
+    }
+}

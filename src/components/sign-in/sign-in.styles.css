@@ -17,3 +17,17 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media (max-width: 400px) {
+    .sign-in {
+        width: 80vw;
+    }
+
+    .sign-in-buttons {
+        flex-direction: column;
+    }
+
+    #sign-in-google {
+        margin-top: 2em;
+    }
+}

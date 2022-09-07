@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    height: auto;
+    align-items: center;
+    background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
+    flex-direction: column;
+}
+
+.footer-logo {
+    padding: 2em;
+    width: fit-content;
+}
+
+.telegram-container {
+    display: flex;
+    align-items: center;
+}
+
+.telegram {
+    width: fit-content;
+}
+
+.telegram-tag {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}

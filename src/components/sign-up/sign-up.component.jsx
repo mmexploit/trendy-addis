@@ -92,7 +92,7 @@ export class SignUp extends Component {
                 label="Confirm Password"
                 signUpForm
                 required/>
-            <CustomButton type="submit" onClick> SIGN UP</CustomButton>
+            <CustomButton type="submit" onClick>SIGN UP</CustomButton>
         </form>
     </div>
     )

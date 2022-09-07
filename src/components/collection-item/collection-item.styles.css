@@ -70,4 +70,8 @@
         width: 80%;
         margin-bottom: 15px;
     }
+
+    #cart-button {
+        opacity: 1;
+    }
 }
