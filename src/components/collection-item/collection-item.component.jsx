@@ -7,14 +7,14 @@ import { addItem } from '../../redux/cart/cart.actions'
 
 
 const CollectionItem = ({item, addItem}) => {
-    const { id, name, price, imageUrl } = item;
+    const { id, name, price, imageUrl, oldPrice } = item;
     return(
         <div key={id} className='collection-item'>
             <div className='image' style={{backgroundImage: `url(${imageUrl})`}}/>
             <div className='collection-footer'>
                 <span className='name'>{ name }</span>
                 <div className='price-tag'>
-                    <span className="old-price">ETB 1000</span>
+                    <span className="old-price">ETB {oldPrice}</span>
                     <span className='price'><span className="currency">ETB </span>{ price }</span>
                 </div>
             
