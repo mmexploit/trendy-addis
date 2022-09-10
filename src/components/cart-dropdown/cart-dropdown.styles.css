@@ -27,7 +27,7 @@
     color: white;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 450px) {
     .cart-dropdown {
         width: 80vw;
         top: 60px;
