@@ -6,6 +6,8 @@
     display: grid;
     grid-template-columns: minmax(1em, 10%) 30ch auto;
     color: white;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 100%);
 }
 
 
@@ -49,7 +51,7 @@
 
 #sign-up-button {
     grid-column: 2 / 3;
-    margin-bottom: 1em;
+    margin-bottom: 5em;
 }
 
 /* floating animation */
@@ -59,7 +61,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 504px;
     overflow: hidden;
 }
 
@@ -69,17 +71,17 @@
     list-style: none;
     width: 20px;
     height: 20px;
-    background: black;
+    background: white;
     animation: animate 25s linear infinite;
     bottom: -150px;
-    z-index: 100;
+    z-index: 0;
     
 }
 
 .circles li:nth-child(1){
     left: 25%;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     animation-delay: 0s;
 }
 
@@ -114,12 +116,68 @@
     animation-delay: 0s;
 }
 
+.circles li:nth-child(6){
+    left: 75%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
 @media (max-width: 50em) {
     .intro {
         height: auto;
         grid-template-columns: minmax(1em, 10%) 30ch auto;
         background: linear-gradient(57.43deg, #4E3682 49.45%, #453682 57.47%, rgba(133, 29, 215, 0.536821) 66.9%);
         max-width: 100%;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 94%, 0 100%);
     }
 
     .intro-title {
@@ -153,5 +211,10 @@
         font-size: .875rem;
         border-bottom: 0;
         box-shadow: 5px 5px 2px black;
+    }
+
+    .circles {
+        height: 781px;
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
     }
 }

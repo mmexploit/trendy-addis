@@ -18,15 +18,20 @@ const Intro = ( {currentUser }) => (
             null :
             <Link id="sign-up-button" to="/signin"><CustomButton >Sign up</CustomButton></Link>
         }
-        
-        <div className='open'></div>
+            <div className='open'></div>
             <ul className="circles">
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
                 <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
+        
 
     </div>
 )

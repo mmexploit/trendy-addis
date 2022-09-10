@@ -455,10 +455,10 @@ const SHOP_DATA = {
         items: [
             {
                 id: 59,
-                name: "Orange Pro6 Airpod",
-                imageUrl: "https://ae01.alicdn.com/kf/Sbf201ee2e0a645ee96f3de83497d21bcO/Air-Pro-6-TWS-Wireless-Headphones-with-Mic-Fone-Bluetooth-Earphones-Sport-Earbuds-Pro6-J6-Headset.jpg_640x640.jpg",
-                price: 950,
-                oldPrice: 1100,
+                name: "Vertical Ergonomic Gaming Mouse",
+                imageUrl: "https://ae01.alicdn.com/kf/Sb06911726c034b8ea75b49a6d6c1718aK/Lefon-Vertical-Wireless-Mouse-Game-Rechargeable-Ergonomic-Mouse-RGB-Optical-USB-Mice-For-Windows-Mac-2400.jpg_Q90.jpg_.webp",
+                price: 1700,
+                oldPrice: 1900,
             },
             {
                 id: 60,
@@ -483,10 +483,10 @@ const SHOP_DATA = {
             },
             {
                 id: 63,
-                name: "Colorful Slim Wireless Mouse",
-                imageUrl: "https://ae01.alicdn.com/kf/S55c127ce5d1640ac93cef9510b408fa1g/Tablet-Phone-Computer-Bluetooth-Wireless-Mouse-Charging-Luminous-2-4G-USB-Wireless-Mouse-Portable-Mouse.jpg_Q90.jpg_.webp",
-                price: 700,
-                oldPrice: 1000,
+                name: "Orange Pro6 Airpod",
+                imageUrl: "https://ae01.alicdn.com/kf/Sbf201ee2e0a645ee96f3de83497d21bcO/Air-Pro-6-TWS-Wireless-Headphones-with-Mic-Fone-Bluetooth-Earphones-Sport-Earbuds-Pro6-J6-Headset.jpg_640x640.jpg",
+                price: 950,
+                oldPrice: 1100,
             },
             {
                 id: 64,
@@ -497,10 +497,11 @@ const SHOP_DATA = {
             },
             {
                 id: 65,
-                name: "Vertical Ergonomic Gaming Mouse",
-                imageUrl: "https://ae01.alicdn.com/kf/Sb06911726c034b8ea75b49a6d6c1718aK/Lefon-Vertical-Wireless-Mouse-Game-Rechargeable-Ergonomic-Mouse-RGB-Optical-USB-Mice-For-Windows-Mac-2400.jpg_Q90.jpg_.webp",
-                price: 1700,
-                oldPrice: 1900,
+                name: "Colorful Slim Wireless Mouse",
+                imageUrl: "https://ae01.alicdn.com/kf/S55c127ce5d1640ac93cef9510b408fa1g/Tablet-Phone-Computer-Bluetooth-Wireless-Mouse-Charging-Luminous-2-4G-USB-Wireless-Mouse-Portable-Mouse.jpg_Q90.jpg_.webp",
+                price: 700,
+                oldPrice: 1000,
+                
             },
             {
                 id: 66,
