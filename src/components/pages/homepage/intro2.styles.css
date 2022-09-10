@@ -37,6 +37,7 @@
     width: 100%;
     justify-content: center;
     margin-top: 1em;
+    overflow: hidden;
 }
 
 .image1,
@@ -54,7 +55,7 @@
 .image1 {
     background-image: url("https://images.unsplash.com/photo-1612215326956-c2bb6228c72d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fGRyZXNzfGVufDB8MXwwfHw%3D&auto=format&fit=crop&w=600&q=60");
     margin-right: -1.2em;
-    transform: translateX(-200px);
+    transform: translateX(-100vw);
     transition: 3s ease;
     opacity: .3;
     z-index: -2;
@@ -72,6 +73,7 @@
     transform: translateX(200px);
     transition: 3s ease;
     opacity: .3;
+    overflow-x:hidden;
 }
 
 .image2.active {

@@ -38,6 +38,11 @@ li {
     list-style: none;
 }
 
+#sign-out-button {
+    color: black;
+    font-weight: 700;
+}
+
 /* navigation */
 
 .mobile-nav-toggle {

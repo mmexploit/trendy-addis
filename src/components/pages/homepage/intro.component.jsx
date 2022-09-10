@@ -15,7 +15,7 @@ const Intro = ( {currentUser }) => (
         <p className='intro-subtitle'>New User? Sign up now and get trendy!</p>
         {
             currentUser ?
-            null :
+            <CustomButton id="sign-up-button">Signed in!</CustomButton>:
             <Link id="sign-up-button" to="/signin"><CustomButton >Sign up</CustomButton></Link>
         }
             <div className='open'></div>
