@@ -15,8 +15,10 @@ import { selectCurrentUser } from '../../redux/user/user.selector'
 import './header.styles.css'
 import { selectCartHidden } from '../../redux/cart/cart.selectors'
 
+import { HeaderContainer } from './header.styles'
+
 const Header  = ({currentUser, hidden}) => (
-    <div className='primary-header'>
+    <HeaderContainer>
         <Link className="logo-container" to="/">
             <Logo className="logo"/> </Link>
         <button className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded="false">
@@ -51,7 +53,7 @@ const Header  = ({currentUser, hidden}) => (
             <CartDropDown/>
         }
         
-    </div>
+    </HeaderContainer>
 );
 
 const mapStateToProps = (state) => createStructuredSelector({

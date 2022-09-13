@@ -11,41 +11,5 @@
     /* margin-top: 5px; */
 }
 
-.title {
-    margin: -2px -2px;
-}
 
-.content {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-    justify-items: center;
-    height: max-content;
-    padding: 20px;
-    border: 1px solid black;
-    background-color: white;
-    opacity: 0.5;
-}
-
-.content:hover {
-    opacity: 0.8;
-}
-
-@media (max-width: 450px) {
-    .directory-menu{ 
-        align-items: center;
-        gap: 0;
-    }
-
-    .menu-item {
-        width: 100%;
-    }
-
-    .large {
-         width: 100vw;
-         height: 250px;
-    }
-
-}
 
