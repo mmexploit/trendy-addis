@@ -4,9 +4,10 @@ import "./form-input.styles.css"
 const FormInput = ({ handleChange, label, signUpForm, ...otherProps}) => (
     <div className='group'>
         <input className={`${ signUpForm ? "sign-up-form" : '' } form-input`} onChange={handleChange} {...otherProps} />
+        {/* ${otherProps.value.length ? "shrink" : ""} */}
         {
             label ? 
-            (<label className={`${otherProps.value.length ? "shrink" : ""} form-input-label`}>
+            (<label className={` form-input-label`}>
                 {label}
             </label>) 
             : null
