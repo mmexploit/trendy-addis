@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import React from 'react';
 import { useEffect } from 'react';
 import './App.css';
@@ -11,15 +10,16 @@ import SignInAndSignUp from './components/pages/sign-in-and-sign-up/sign-ins-and
 import Footer from './components/pages/homepage/footer.component';
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
-import {createStructuredSelector} from 'reselect'
 
-import { connect } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setCurrentUser } from './redux/user/user.actions';
 import { selectCurrentUser } from './redux/user/user.selector';
 
 
 
-const App = ({ currentUser, setCurrentUser,  } ) => {
+const App = ( ) => {
+  const currentUser = useSelector(selectCurrentUser);
+  const dispatch = useDispatch();
 
   let unsubsribeFromAuth = null
 
@@ -29,13 +29,13 @@ const App = ({ currentUser, setCurrentUser,  } ) => {
           const userRef = await createUserProfileDocument(userAuth);
 
           userRef.onSnapshot(snapShot =>  {
-            setCurrentUser({
+            dispatch(setCurrentUser({
                 id: snapShot.id,
                 ...snapShot.data()
-              });
+              }));
             })
         } else {
-          setCurrentUser(userAuth);
+          dispatch(setCurrentUser(userAuth));
         }
 
       })
@@ -43,7 +43,7 @@ const App = ({ currentUser, setCurrentUser,  } ) => {
       return () => {
         unsubsribeFromAuth()
       }
-  }, [])
+  }, [dispatch])
     
 
   return (
@@ -63,15 +63,4 @@ const App = ({ currentUser, setCurrentUser,  } ) => {
   );
   }
 
-const mapStateToProps = createStructuredSelector({
-  currentUser: selectCurrentUser,
-})
-
-const mapDispatchToProps = dispatch => ({
-  setCurrentUser: user => dispatch(setCurrentUser(user))
-})
-
-export default connect( 
-  mapStateToProps,
-  mapDispatchToProps
-  )(App);
+export default App;

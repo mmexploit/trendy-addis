@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { connect  } from 'react-redux/es/exports'
-import {createStructuredSelector} from 'reselect'
+import { useSelector } from 'react-redux/es/exports'
 
 import { auth } from '../../firebase/firebase.utils'
 
@@ -17,48 +16,48 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors'
 
 import { HeaderContainer } from './header.styles'
 
-const Header  = ({currentUser, hidden}) => (
-    <HeaderContainer>
-        <Link className="logo-container" to="/">
-            <Logo className="logo"/> </Link>
-        <button className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded="false">
-            <img className="icon-open" src={openIcon} alt="" aria-hidden="true"/>
-            <img className="icon-close" src={closeIcon} alt="" aria-hidden="true"/>
-            <span className='visually-hidden'>Menu</span>
-        </button>
-        
-        
-        <nav className="primary-navigation">
-                <ul className='nav-list' id="primary-navigation">
-                <li><Link className='option' to="/shop">
-                    Shop
-                </Link></li>
-                <li><Link className='option' to="/shop">
-                    Contact
-                </Link></li>
-                {
-                    currentUser ?
-                    <li><div className='option' id="sign-out-button" onClick={() => auth.signOut()}>Sign Out</div></li>
-                    :
-                    <li><Link className='option' to='/signin'>Sign In</Link></li>
-                }
-                
-                </ul>
-       
+const Header = ( ) => {
+    const currentUser = useSelector(selectCurrentUser);
+    const hidden = useSelector(selectCartHidden);
 
-        </nav>
-        <CartIcon id="cart-icon"/>
-        {
-            hidden ? null :
-            <CartDropDown/>
-        }
+    return (
+        <HeaderContainer>
+            <Link className="logo-container" to="/">
+                <Logo className="logo"/> </Link>
+            <button className='mobile-nav-toggle' aria-controls='primary-navigation' aria-expanded="false">
+                <img className="icon-open" src={openIcon} alt="" aria-hidden="true"/>
+                <img className="icon-close" src={closeIcon} alt="" aria-hidden="true"/>
+                <span className='visually-hidden'>Menu</span>
+            </button>
+            
+            
+            <nav className="primary-navigation">
+                    <ul className='nav-list' id="primary-navigation">
+                    <li><Link className='option' to="/shop">
+                        Shop
+                    </Link></li>
+                    <li><Link className='option' to="/shop">
+                        Contact
+                    </Link></li>
+                    {
+                        currentUser ?
+                        <li><div className='option' id="sign-out-button" onClick={() => auth.signOut()}>Sign Out</div></li>
+                        :
+                        <li><Link className='option' to='/signin'>Sign In</Link></li>
+                    }
+                    
+                    </ul>
         
-    </HeaderContainer>
-);
 
-const mapStateToProps = (state) => createStructuredSelector({
-    currentUser: selectCurrentUser,
-    hidden: selectCartHidden
-})
+            </nav>
+            <CartIcon id="cart-icon"/>
+            {
+                hidden ? null :
+                <CartDropDown/>
+            }
+            
+        </HeaderContainer>
+    )
+};
 
-export default connect(mapStateToProps)(Header);
+export default Header;
