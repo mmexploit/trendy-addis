@@ -8,15 +8,18 @@ import CollectionsContext from '../../../contexts/collections/collections.contex
 
 import './collection.styles.css'
 import { useParams } from 'react-router-dom'
+import { useContext } from 'react'
 
 
 const CollectionPage = () => {
-    // const params = useParams();
-    // const collection = useSelector(selectCollection(params.collectionId));
-
+    const params = useParams();
+    const collections = useContext(CollectionsContext);
+    const collection = collections[params.collectionId];
     const { title, items } = collection;
+
+    
+    // const collection = useSelector(selectCollection(params.collectionId));
     return (
-        <CollectionsContext.Consumer>
         <div className='collection-page'>
             <h2 className='title'>{ title }</h2>
             <div className="items-container">
@@ -28,7 +31,6 @@ const CollectionPage = () => {
             </div>
             
         </div>
-        </CollectionsContext.Consumer>
         
     )
 }
