@@ -14,8 +14,8 @@ import { useContext } from 'react'
 const CollectionPage = () => {
     const params = useParams();
     const collections = useContext(CollectionsContext);
-    const collection = collections[params.collectionId];
-    const { title, items } = collection;
+    const collection = collections[params.collectionId]
+    const { title, items } = collection
 
     
     // const collection = useSelector(selectCollection(params.collectionId));
