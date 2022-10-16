@@ -13,12 +13,13 @@ import { useContext } from 'react'
 
 const CollectionPage = () => {
     const params = useParams();
-    const collections = useContext(CollectionsContext);
-    const collection = collections[params.collectionId]
+    const collection = useSelector(selectCollection(params.collectionId));
+    // const collections = useContext(CollectionsContext);
+    // const collection = collections[params.collectionId]
     const { title, items } = collection
 
     
-    // const collection = useSelector(selectCollection(params.collectionId));
+    
     return (
         <div className='collection-page'>
             <h2 className='title'>{ title }</h2>
