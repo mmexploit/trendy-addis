@@ -14,8 +14,8 @@ import WithSpinner from '../../with-spinner/with-spinner.component'
 
 import './shop-page.styles.css'
 
-const CollectionOverviewWithSpinnner = WithSpinner(CollectionOverview);
-const CollectionPageWithSpinner = WithSpinner(CollectionPage);
+const CollectionOverviewWithSpinnner = WithSpinner(CollectionOverview)
+const CollectionPageWithSpinner = WithSpinner(CollectionPage)
 
 const ShopPage = ({match}) => {
     const isCollectionsLoaded = useSelector(selectIsCollectionLoaded);
