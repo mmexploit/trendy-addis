@@ -19,10 +19,10 @@ const CollectionPageWithSpinner = WithSpinner(CollectionPage)
 
 const ShopPage = ({match}) => {
     const isCollectionsLoaded = useSelector(selectIsCollectionLoaded);
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
     useEffect (() => {
-        dispatch(fetchCollectionsStartAsync());
+        dispatch(fetchCollectionsStartAsync())
     }, [dispatch])
 
 
