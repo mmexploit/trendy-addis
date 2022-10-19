@@ -9,7 +9,7 @@ import './cart-icon.styles.css'
 
 
 const CartIcon = ( ) => {
-    const itemCount = useSelector(selectCartItemsCount)
+    const itemCount = useSelector(selectCartItemsCount);
     const dispatch = useDispatch();
 
     return (

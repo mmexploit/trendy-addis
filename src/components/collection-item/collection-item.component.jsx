@@ -7,7 +7,7 @@ import { addItem } from '../../redux/cart/cart.actions'
 
 
 const CollectionItem = ({item }) => {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch()
 
     const { id, name, price, imageUrl, oldPrice } = item;
     return(
