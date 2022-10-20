@@ -7,7 +7,7 @@ import CollectionPreview from '../preview-collection/collection-preview.componen
 import './collection-overview.styles.css'
 
 const CollectionOverview = () => {
-    const collections = useSelector(selectCollectionsForPreview)
+    const collections = useSelector(selectCollectionsForPreview);
 
     return (
         <div className="collections-overview">
